@@ -14,7 +14,7 @@ tests(Path) ->
 
 signature_base_string_tests(Path) ->
   TestPaths = filename:join(Path, "base_string_test_*"),
-  test_each(TestPaths, oauth_signature, base_string, [method, url, params], base_string).
+  test_each(TestPaths, oauth, signature_base_string, [method, url, params], base_string).
 
 plaintext_signature_tests(Path) ->
   TestPaths = filename:join(Path, "plaintext_signature_test_*"),
